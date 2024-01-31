@@ -34,7 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void getData() async {
       UserStream = await FirebaseMethods().getUserDetails();
-      print(UserStream);
+      setState(() {
+
+      });
   }
 
   @override
